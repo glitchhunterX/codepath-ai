@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ff9d">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Paths - CodePath AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">CodePath <span class="ai">AI</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paths.html">Paths</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="ai-tutor.html">AI Tutor</a></li>
+            </ul>
+            <div>
+                <button id="theme-toggle" class="theme-toggle">🌙</button>
+                <span class="hamburger">☰</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section">
+        <h2>Choose Your Learning Path</h2>
+        <p id="progress-status" style="text-align:center;margin-bottom:40px;font-weight:600;color:var(--accent);">Current Path: None</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🚀 Beginner</h3>
+                <p>HTML, CSS, basic JavaScript. Build your first website quickly.</p>
+                <button onclick="startPath('beginner')" style="margin-top:20px;padding:12px 30px;background:var(--accent);color:#0f0f1a;border:none;border-radius:8px;cursor:pointer;">Start Beginner</button>
+            </div>
+            <div class="card">
+                <h3>⚡ Intermediate</h3>
+                <p>Advanced JS, APIs, Git, and small real-world projects.</p>
+                <button onclick="startPath('intermediate')" style="margin-top:20px;padding:12px 30px;background:var(--accent);color:#0f0f1a;border:none;border-radius:8px;cursor:pointer;">Start Intermediate</button>
+            </div>
+            <div class="card">
+                <h3>🔥 Advanced</h3>
+                <p>Frameworks, algorithms, full-stack development.</p>
+                <button onclick="startPath('advanced')" style="margin-top:20px;padding:12px 30px;background:var(--accent);color:#0f0f1a;border:none;border-radius:8px;cursor:pointer;">Start Advanced</button>
+            </div>
+        </div>
+
+        <h2 style="margin-top:80px;">Sample Lesson: Variables & Data Types</h2>
+        <pre><code>/* JavaScript */
+let name = "Alex";
+let age = 25;
+console.log(`Hi, I'm ${name} and I'm ${age} years old.`);
+
+/* Python */
+name = "Alex"
+age = 25
+print(f"Hi, I'm {name} and I'm {age} years old.")</code></pre>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CodePath AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
